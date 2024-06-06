@@ -5,43 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      *{
-        margin: 0;
+      td{
+        width: 180px;
+      }
+      h1,h4
+      {
+      margin: 0px;
+      }
+      hr{
+        width: 80%;
+        margin-left: 0px;
+      }
+      table{
+        margin-top: 18px;
+      }
+      tr,td{
+        height: 32px;
       }
     </style>
 </head>
 <body>
     <h1>Onlline Job Registration Portal</h1>
-    <h4 style="margin: 0px;">Register yourself to get new job updates</h4>
-          <form>
+    <h4 style="margin: 0px;"></h4>Register yourself to get new job updates</h4>
+    <hr>
             <table>
-        <tr>
-          <td>Full Name:</td>
-          <td><input type="text" placeholder="First Name"><input type ="text" placeholder="Last Name"></td>
-        </tr>
-       
-          <tr>
-            <td>Address</td>
-            <td><input type="text" required style="width: 500px;"><br><h5>Street Address</h5></td><br><br>
-          </tr>
-            <tr><td></td><td><input type="text"required style="width: 500px;"><br><h5>Street Address Line2</h5></td><br></tr>
-            <tr><td></td><td><input type="text" required><br><h5>City</h5></td><td><input type="text" required><h5>State</h5></td></tr>
-            <tr><td></td><td><input type="number" required><br><h5>Pin Code</h5></td><td><select name="">
-            <option value="">Please select</option>
+              <form>
+       <tr><td>Full Name:</td>
+      <td> 
+        <input type="text" placeholder="First Name" required><input type="text" style="margin-left: 15px;" placeholder="Last Name">
+    </td>
+    </tr>
+    
+    <tr>
+      <td>Address:</td>
+      <td ><input type="text"style="width: 520px;" placeholder="Street Address" maxlength="25" required></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="text" placeholder="Street Address Line2" style="width: 520px;" required></td>
+
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="text" style="width: 245px;" placeholder="City">
+      <input type="text" style="width: 250px; margin-left: 15px;" placeholder="State"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="number" placeholder="Pin Code">
+              <select style="width: 280px;margin-left: 70px;" name="" >
+                <option value="">Country</option>
             <option value="">India</option>
-            <option value="">China</option>
-            <option value="">Russia</option></select><br><h5>Country</h5></td></tr>
-            <tr><td>Phone Number    </td></h5><td><input type="number" required><br><h5>Area Code</td><td><input type="number"><br><h5>Phone Number</td></tr>
+              </select></td></tr>
+            <tr><td>Phone Number :</td><td><input type="number" style="width: 100px;" placeholder="Area Code">     -<input type="number" style="margin-left: 5px;" placeholder="Phone Number"></td></tr>
               <tr><td>Mobile:</td><td><input type="number" required></td></tr>
-              <tr><td>E-mail:</td><td><input type="email" required></td></tr>
-              <tr><td>Cover Letter:</td><td><textarea name="" cols="80" rows="5" ></textarea></td></tr>
-              <tr><td>Resume</td><td><input type="file" required></td></tr>
-              <tr><td>Declaration:</td><td><input type="checkbox" required>The above information filled by me is true.I also accept all the terms and conditions.</td></tr>
-              <tr><td></td><td><div style="text-align: center;"><input type="submit" required></td><td><input type="reset"></td></tr></div>
-            </table>
-            
+              <tr><td>Skill Level:</td><td><select name="">
+                <option value="">Please select</option>
+                <option value="">Under Graduate</option>
+                <option value="">Graduate</option>
+                <option value="">Post Graduate</option>
+                <option value="">Diploma Technical</option>
+                </select></td></tr>
+              <tr><td>E-mail:</td><td><input type="email" style="width: 230px;" required></td></tr>
+              <tr><td>Cover Letter:</td><td><textarea name="" cols="70" rows="5" ></textarea></td></tr>
+              <tr><td>Resume:</td><td><input type="file" placeholder="browse" required></td></tr>
+              <tr><td>Declaration:</td><td><input type="checkbox" required>The above information filled by me is true.I also accept all the <br>terms and conditions.</td></tr>
+              <tr><td></td><td><div style="text-align: center;"><input type="submit" placeholder="Submit Form"><input type="reset"></td></tr></div>
+                  
 
         </form>
+      </table>
 
 </body>
 </html>
